@@ -1,1 +1,13 @@
+org\example\Pages\AutomationExercisePractice\PageObjects\AccountCreatedPage.class
+org\example\Pages\Practice\PageObjects\GoogleResultPage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\SignUpLoginPage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\SignUpPage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\AutomationExerciseHomePage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\PaymentPage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\ShoppingCartPage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\ProductItemPage.class
+org\example\Pages\AbstractPage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\ProductsPage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\OrderReviewPage.class
 org\example\App.class
+org\example\Pages\Practice\PageObjects\GoogleHomePage.class

@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.AutomationExercisePractice.*;
-import org.example.Practice.GoogleResultPage;
-import org.example.Practice.GoogleHomePage;
+import org.example.Pages.AutomationExercisePractice.PageObjects.*;
+import org.example.Pages.Practice.PageObjects.GoogleResultPage;
+import org.example.Pages.Practice.PageObjects.GoogleHomePage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -53,7 +53,7 @@ public class AppTest {
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys("SuperSecretPassword!");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-        assertTrue(driver.findElements(By.xpath("//div[@class='flash success']")).isEmpty());
+        assertTrue(driver.findElements(By.xpath("//div[@class='flash error']")).isEmpty());
         Thread.sleep(10000);
     }
 
