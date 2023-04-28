@@ -27,7 +27,7 @@ public class AccountCreatedPage extends AbstractPage {
     }
 
     public boolean isSuccessMessageDisplayed() {
-        return successMsg.isDisplayed();
+        return super.isElementDisplayed(driver, SUCCESS_MESSAGE);
     }
 
     public AutomationExerciseHomePage clickContinueButton() {

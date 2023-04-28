@@ -13,6 +13,7 @@ public class PaymentPage extends AbstractPage {
     static final String CVC = "//input[@data-qa='cvc']";
     static final String EXPIRATION_MONTH = "//input[@data-qa='expiry-month']";
     static final String EXPIRATION_YEAR = "//input[@data-qa='expiry-year']";
+    static final String CONFIRM_ORDER_BUTTON = "//button[@id='submit']";
 
     //WebElements
     @FindBy(how = How.XPATH, using = NAME_ON_CARD)
@@ -29,6 +30,9 @@ public class PaymentPage extends AbstractPage {
 
     @FindBy(how = How.XPATH, using = EXPIRATION_YEAR)
     WebElement expirationYear;
+
+    @FindBy(how = How.XPATH, using = CONFIRM_ORDER_BUTTON)
+    WebElement confirmOrderButton;
 
 
     public PaymentPage(WebDriver driver) {
@@ -53,5 +57,10 @@ public class PaymentPage extends AbstractPage {
 
     public void enterExpirationYear(String text) {
         expirationYear.sendKeys(text);
+    }
+
+    public OrderPlacedPage clickPayConfirmOrderButton() {
+        confirmOrderButton.click();
+        return new OrderPlacedPage(driver);
     }
 }

@@ -1,6 +1,7 @@
 package org.example.Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -21,6 +22,14 @@ public abstract class AbstractPage {
 
     public boolean isElementDisplayed(WebDriver driver, String xPath) {
         return driver.findElements(By.xpath(xPath)).size() > 0;
+    }
+
+    public boolean isElementDisplayed(WebElement element) {
+        try {
+            return element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 }
 

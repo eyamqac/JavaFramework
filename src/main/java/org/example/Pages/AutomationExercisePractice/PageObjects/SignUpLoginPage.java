@@ -64,11 +64,11 @@ public class SignUpLoginPage extends AbstractPage {
     }
 
     public boolean loginErrorMessageDisplayed() {
-        return loginErrorMessage.isDisplayed();
+        return super.isElementDisplayed(driver, LOGIN_ERROR_MESSAGE);
     }
 
     public boolean signUpErrorMessageDisplayed() {
-        return signUpErrorMessage.isDisplayed();
+        return super.isElementDisplayed(driver, SIGNUP_ERROR_MESSAGE);
     }
 
     //This method is supposed to redirect back to home page only

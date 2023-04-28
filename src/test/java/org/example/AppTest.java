@@ -21,7 +21,7 @@ public class AppTest {
     @BeforeEach
     public void setup() {
         EdgeOptions options = new EdgeOptions();
-        options.addExtensions(new File("C:/Users/eyam/repos/JavaFramework/bin/1.49.2_0.crx"));
+        options.addExtensions(new File("./bin/1.49.2_0.crx"));
         driver = new EdgeDriver(options);
     }
 
@@ -158,6 +158,10 @@ public class AppTest {
         paymentPage.enterExpirationMonth("2");
         paymentPage.enterExpirationYear("2021");
 
+        OrderPlacedPage orderPlacedPage = paymentPage.clickPayConfirmOrderButton();
+        assertTrue(orderPlacedPage.orderPlacedMessageDisplayed());
+
+        homePage = orderPlacedPage.clickContinueButton();
         Thread.sleep(10000);
     }
 }

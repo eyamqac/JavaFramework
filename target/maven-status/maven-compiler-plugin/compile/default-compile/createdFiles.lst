@@ -10,4 +10,6 @@ org\example\Pages\AbstractPage.class
 org\example\Pages\AutomationExercisePractice\PageObjects\ProductsPage.class
 org\example\Pages\AutomationExercisePractice\PageObjects\OrderReviewPage.class
 org\example\App.class
+org\example\Pages\AutomationExercisePractice\PageObjects\OrderPlacedPage.class
 org\example\Pages\Practice\PageObjects\GoogleHomePage.class
+org\example\Pages\AutomationExercisePractice\PageObjects\AccountDeletedPage.class
