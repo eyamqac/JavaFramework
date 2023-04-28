@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ProductItemPage extends AbstractPage {
     //xPaths
@@ -24,10 +25,9 @@ public class ProductItemPage extends AbstractPage {
 
     public ShoppingCartPage clickAddToCart() {
         addToCartButton.click();
+        wait.until(ExpectedConditions.visibilityOf(viewCart));
+        viewCart.click();
 
-        if (viewCart.isDisplayed()) {
-            viewCart.click();
-        }
         return new ShoppingCartPage(driver);
     }
 }

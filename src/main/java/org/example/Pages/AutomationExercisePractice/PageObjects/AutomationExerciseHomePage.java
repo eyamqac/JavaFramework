@@ -12,24 +12,36 @@ public class AutomationExerciseHomePage extends AbstractPage {
     static final String PRODUCTS = "//a[@href='/products']";
     static final String CART = "//a[@href='/view_cart']";
     static final String SIGNUP_LOGIN = "//a[@href='/login']";
+    static final String LOGGED_IN_AS = "//a[contains(text(),'Logged in as')]";
+    static final String DELETE_ACCOUNT = "//a[@href='/delete_account']";
 
     //WebElements
     @FindBy(how = How.XPATH, using = HOME)
     WebElement homeNavItem;
+
     @FindBy(how = How.XPATH, using = PRODUCTS)
     WebElement productNavItem;
+
     @FindBy(how = How.XPATH, using = CART)
     WebElement cartNavItem;
+
     @FindBy(how = How.XPATH, using = SIGNUP_LOGIN)
     WebElement signUpLoginNavItem;
+
+    @FindBy(how = How.XPATH, using = LOGGED_IN_AS)
+    WebElement loggedInAs;
+
+    @FindBy(how = How.XPATH, using = DELETE_ACCOUNT)
+    WebElement deleteAccountNavItem;
 
     public AutomationExerciseHomePage(WebDriver driver) {
         super(driver);
     }
 
     //TODO: Model other pages and make them return the new page instead of having them be void methods
-    public void clickHomeNavigationItem() {
+    public AutomationExerciseHomePage clickHomeNavigationItem() {
         homeNavItem.click();
+        return new AutomationExerciseHomePage(driver);
     }
 
     public ProductsPage clickProductNavigationItem() {
@@ -37,8 +49,9 @@ public class AutomationExerciseHomePage extends AbstractPage {
         return new ProductsPage(driver);
     }
 
-    public void clickCartNavigationItem() {
+    public ShoppingCartPage clickCartNavigationItem() {
         cartNavItem.click();
+        return new ShoppingCartPage(driver);
     }
 
     public SignUpLoginPage clickSignUpLoginNavigationItem() {
@@ -46,4 +59,12 @@ public class AutomationExerciseHomePage extends AbstractPage {
         return new SignUpLoginPage(driver);
     }
 
+    public AccountDeletedPage clickDeleteAccount() {
+        deleteAccountNavItem.click();
+        return new AccountDeletedPage(driver);
+    }
+
+    public boolean LoggedInAsDisplayed() {
+        return super.isElementDisplayed(driver, LOGGED_IN_AS);
+    }
 }

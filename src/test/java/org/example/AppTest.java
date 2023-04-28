@@ -1,14 +1,17 @@
 package org.example;
 
 import org.example.Pages.AutomationExercisePractice.PageObjects.*;
-import org.example.Pages.Practice.PageObjects.GoogleResultPage;
 import org.example.Pages.Practice.PageObjects.GoogleHomePage;
+import org.example.Pages.Practice.PageObjects.GoogleResultPage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+
+import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -17,7 +20,9 @@ public class AppTest {
 
     @BeforeEach
     public void setup() {
-        driver = new EdgeDriver();
+        EdgeOptions options = new EdgeOptions();
+        options.addExtensions(new File("C:/Users/eyam/repos/JavaFramework/bin/1.49.2_0.crx"));
+        driver = new EdgeDriver(options);
     }
 
     @AfterEach
@@ -102,7 +107,7 @@ public class AppTest {
 
         SignUpLoginPage loginPage = homePage.clickSignUpLoginNavigationItem();
         loginPage.enterSignUpName("temporarygeneric");
-        loginPage.enterSignUpEmailAddress("temporarygeneric4@hotmail.com");
+        loginPage.enterSignUpEmailAddress("temporarygeneric3@hotmail.com");
 
         SignUpPage signUpPage = loginPage.clickSignUpButton();
         signUpPage.selectTitleOption1();
@@ -122,6 +127,12 @@ public class AppTest {
         assertTrue(accountCreatedPage.isSuccessMessageDisplayed());
 
         homePage = accountCreatedPage.clickContinueButton();
+        assertTrue(homePage.LoggedInAsDisplayed());
+
+        //Delete Account afterwards so that we can keep re-using the same username for this test
+        AccountDeletedPage accountDeletedPage = homePage.clickDeleteAccount();
+        homePage = accountDeletedPage.clickContinueButton();
+        assertTrue(!homePage.LoggedInAsDisplayed());
 
         Thread.sleep(10000);
     }
