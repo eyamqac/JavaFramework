@@ -3,6 +3,7 @@ package org.example;
 import org.example.Pages.AutomationExercisePractice.PageObjects.*;
 import org.example.Pages.Practice.PageObjects.GoogleHomePage;
 import org.example.Pages.Practice.PageObjects.GoogleResultPage;
+import org.example.Pages.SwagLabsPage.PageObjects.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,8 +11,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-
-import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -21,8 +20,9 @@ public class AppTest {
     @BeforeEach
     public void setup() {
         EdgeOptions options = new EdgeOptions();
-        options.addExtensions(new File("./bin/1.49.2_0.crx"));
-        driver = new EdgeDriver(options);
+//        options.addExtensions(new File("./bin/1.49.2_0.crx"));
+//        driver = new EdgeDriver(options);
+        driver = new EdgeDriver();
     }
 
     @AfterEach
@@ -163,5 +163,89 @@ public class AppTest {
 
         homePage = orderPlacedPage.clickContinueButton();
         Thread.sleep(10000);
+    }
+
+    @Test
+    public void Test_9() throws InterruptedException { //Successful Login
+        driver.get("https://www.saucedemo.com");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.fill("standard_user", "secret_sauce");
+        InventoryPage inventoryPage = loginPage.clickLoginButton();
+
+        assertTrue(!loginPage.loginErrorDisplayed());
+        Thread.sleep(5000);
+    }
+
+    @Test
+    public void Test_10() throws InterruptedException { //Failed Login
+        driver.get("https://www.saucedemo.com");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.fill("standard_user", "invalidpassword");
+        loginPage.clickLoginButton();
+
+        assertTrue(loginPage.loginErrorDisplayed());
+        Thread.sleep(5000);
+    }
+
+    @Test
+    public void Test_11() throws InterruptedException {//Purchase Item
+        driver.get("https://www.saucedemo.com");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.fill("standard_user", "secret_sauce");
+
+        InventoryPage inventoryPage = loginPage.clickLoginButton();
+        assertTrue(inventoryPage.isInventoryTitleDisplayed());
+
+        InventoryItemPage inventoryItemPage = inventoryPage.clickProduct1();
+        assertTrue(inventoryItemPage.getAddButton().isDisplayed());
+        inventoryItemPage.clickAddToCart();
+        assertTrue(inventoryItemPage.getRemoveButton().isDisplayed());
+
+        YourCartPage yourCartPage = inventoryItemPage.clickShoppingCartButton();
+        assertTrue(yourCartPage.isShoppingCartTitleDisplayed());
+
+        CheckoutPage checkoutPage = yourCartPage.clickCheckoutButton();
+        assertTrue(checkoutPage.isCheckoutTitleDisplayed());
+        checkoutPage.fill("temp", "generic", "12345");
+
+        CheckoutOverViewPage overViewPage = checkoutPage.clickContinueButton();
+        assertTrue(overViewPage.isCheckoutOverViewTitleDisplayed());
+
+        PostCheckoutPage postCheckoutPage = overViewPage.clickFinishButton();
+        assertTrue(postCheckoutPage.isSuccessMessageDisplayed());
+
+        inventoryPage = postCheckoutPage.clickBackHomeButton();
+        assertTrue(inventoryPage.isInventoryTitleDisplayed());
+
+        inventoryPage.openSideBar();
+        loginPage = inventoryPage.clickSideMenuLogout();
+
+        Thread.sleep(5000);
+    }
+
+    @Test
+    public void Test_12() throws InterruptedException { //Filter Select
+        driver.get("https://www.saucedemo.com");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.fill("standard_user", "secret_sauce");
+
+        InventoryPage inventoryPage = loginPage.clickLoginButton();
+        inventoryPage.selectFilter(2);
+
+        Thread.sleep(5000);
+    }
+
+    @Test
+    public void Test_13() throws InterruptedException { //Filter Select
+        driver.get("https://www.saucedemo.com");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.fill("standard_user", "secret_sauce");
+
+        InventoryPage inventoryPage = loginPage.clickLoginButton();
+        inventoryPage.openSideBar();
+        AboutPage aboutPage = inventoryPage.clickSideMenuAbout();
+        assertTrue(aboutPage.isAboutTitleDisplayed());
+
+        Thread.sleep(5000);
     }
 }
