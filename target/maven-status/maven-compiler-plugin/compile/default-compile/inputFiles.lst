@@ -1,7 +1,15 @@
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\ShoppingCartPage.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\AboutPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\AutomationExerciseHomePage.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\YourCartPage.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\PostCheckoutPage.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\TopNavBar.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\CheckoutPage.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\InventoryPage.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\InventoryItemPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\AccountCreatedPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\ProductItemPage.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\LoginPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\OrderPlacedPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\AccountDeletedPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\PaymentPage.java
@@ -9,6 +17,7 @@ C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\Practice\PageO
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\OrderReviewPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\SignUpPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\Practice\PageObjects\GoogleResultPage.java
+C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\SwagLabsPage\PageObjects\CheckoutOverViewPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\SignUpLoginPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AutomationExercisePractice\PageObjects\ProductsPage.java
 C:\Users\eyam\repos\JavaFramework\src\main\java\org\example\Pages\AbstractPage.java

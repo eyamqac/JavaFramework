@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.example.AppTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 147.943 s - in org.example.AppTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 399.204 s - in org.example.AppTest

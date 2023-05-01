@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
+import java.io.File;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AppTest {
@@ -20,9 +22,9 @@ public class AppTest {
     @BeforeEach
     public void setup() {
         EdgeOptions options = new EdgeOptions();
-//        options.addExtensions(new File("./bin/1.49.2_0.crx"));
-//        driver = new EdgeDriver(options);
-        driver = new EdgeDriver();
+        options.addExtensions(new File("./bin/1.49.2_0.crx"));
+        driver = new EdgeDriver(options);
+//        driver = new EdgeDriver();
     }
 
     @AfterEach
@@ -31,35 +33,32 @@ public class AppTest {
     }
 
     @Test
-    public void RunMyTest() throws InterruptedException {
+    public void RunMyTest() {
         driver.get("http://www.google.com");
         driver.findElement(By.xpath("//textarea[@name='q']")).sendKeys("Steve Jobs");
         driver.findElement(By.xpath("//input[@class='gNO89b']")).click();
 
         assertTrue(driver.findElements(By.xpath("//input[@class='gNO89b']")).isEmpty()); //verify search button no longer visible after clicked
-        Thread.sleep(10000);
     }
 
     @Test
-    public void Test_3() throws InterruptedException { //Test Authentication Fail
+    public void Test_3() { //Test Authentication Fail
         driver.get("https://the-internet.herokuapp.com/login");
         driver.findElement(By.xpath("//input[@id='username']")).sendKeys("temp-generic");
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys("123456");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
         assertTrue(!driver.findElements(By.xpath("//div[@class='flash error']")).isEmpty());
-        Thread.sleep(10000);
     }
 
     @Test
-    public void Test_3_5() throws InterruptedException { //Test Authentication Pass
+    public void Test_3_5() { //Test Authentication Pass
         driver.get("https://the-internet.herokuapp.com/login");
         driver.findElement(By.xpath("//input[@id='username']")).sendKeys("tomsmith");
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys("SuperSecretPassword!");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
         assertTrue(driver.findElements(By.xpath("//div[@class='flash error']")).isEmpty());
-        Thread.sleep(10000);
     }
 
     @Test
@@ -86,7 +85,7 @@ public class AppTest {
     }
 
     @Test
-    public void Test_6() throws InterruptedException { //Failed Login
+    public void Test_6() { //Failed Login
         driver.get("https://www.automationexercise.com/");
         AutomationExerciseHomePage homePage = new AutomationExerciseHomePage(driver);
 
@@ -96,18 +95,16 @@ public class AppTest {
         loginPage.enterLoginEmailAddress("tempgeneric@hotmail.com");
         loginPage.clickLoginButton();
         assertTrue(loginPage.loginErrorMessageDisplayed());
-
-        Thread.sleep(5000);
     }
 
     @Test
-    public void Test_7() throws InterruptedException { //Successful Signup
+    public void Test_7() { //Successful Signup
         driver.get("https://www.automationexercise.com/");
         AutomationExerciseHomePage homePage = new AutomationExerciseHomePage(driver);
 
         SignUpLoginPage loginPage = homePage.clickSignUpLoginNavigationItem();
         loginPage.enterSignUpName("temporarygeneric");
-        loginPage.enterSignUpEmailAddress("temporarygeneric3@hotmail.com");
+        loginPage.enterSignUpEmailAddress("temporarygeneric4@hotmail.com");
 
         SignUpPage signUpPage = loginPage.clickSignUpButton();
         signUpPage.selectTitleOption1();
@@ -133,12 +130,10 @@ public class AppTest {
         AccountDeletedPage accountDeletedPage = homePage.clickDeleteAccount();
         homePage = accountDeletedPage.clickContinueButton();
         assertTrue(!homePage.LoggedInAsDisplayed());
-
-        Thread.sleep(10000);
     }
 
     @Test
-    public void Test_8() throws InterruptedException { //Purchase an Item
+    public void Test_8() { //Purchase an Item
         driver.get("https://www.automationexercise.com/");
         AutomationExerciseHomePage homePage = new AutomationExerciseHomePage(driver);
         SignUpLoginPage loginPage = homePage.clickSignUpLoginNavigationItem();
@@ -162,33 +157,30 @@ public class AppTest {
         assertTrue(orderPlacedPage.orderPlacedMessageDisplayed());
 
         homePage = orderPlacedPage.clickContinueButton();
-        Thread.sleep(10000);
     }
 
     @Test
-    public void Test_9() throws InterruptedException { //Successful Login
+    public void Test_9() { //Successful Login
         driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill("standard_user", "secret_sauce");
         InventoryPage inventoryPage = loginPage.clickLoginButton();
 
         assertTrue(!loginPage.loginErrorDisplayed());
-        Thread.sleep(5000);
     }
 
     @Test
-    public void Test_10() throws InterruptedException { //Failed Login
+    public void Test_10() { //Failed Login
         driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill("standard_user", "invalidpassword");
         loginPage.clickLoginButton();
 
         assertTrue(loginPage.loginErrorDisplayed());
-        Thread.sleep(5000);
     }
 
     @Test
-    public void Test_11() throws InterruptedException {//Purchase Item
+    public void Test_11() {//Purchase Item
         driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill("standard_user", "secret_sauce");
@@ -219,24 +211,20 @@ public class AppTest {
 
         inventoryPage.openSideBar();
         loginPage = inventoryPage.clickSideMenuLogout();
-
-        Thread.sleep(5000);
     }
 
     @Test
-    public void Test_12() throws InterruptedException { //Filter Select
+    public void Test_12() { //Filter Select
         driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill("standard_user", "secret_sauce");
 
         InventoryPage inventoryPage = loginPage.clickLoginButton();
         inventoryPage.selectFilter(2);
-
-        Thread.sleep(5000);
     }
 
     @Test
-    public void Test_13() throws InterruptedException { //Filter Select
+    public void Test_13() { //Filter Select
         driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill("standard_user", "secret_sauce");
@@ -245,7 +233,5 @@ public class AppTest {
         inventoryPage.openSideBar();
         AboutPage aboutPage = inventoryPage.clickSideMenuAbout();
         assertTrue(aboutPage.isAboutTitleDisplayed());
-
-        Thread.sleep(5000);
     }
 }
