@@ -224,7 +224,7 @@ public class AppTest {
     }
 
     @Test
-    public void Test_13() { //Filter Select
+    public void Test_13() { //Go to About page
         driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill("standard_user", "secret_sauce");
