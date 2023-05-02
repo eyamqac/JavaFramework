@@ -234,4 +234,24 @@ public class AppTest {
         AboutPage aboutPage = inventoryPage.clickSideMenuAbout();
         assertTrue(aboutPage.isAboutTitleDisplayed());
     }
+
+    @Test
+    public void Test_14() { //Add item to cart, then remove item from cart
+        driver.get("https://www.saucedemo.com");
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.fill("standard_user", "secret_sauce");
+
+        InventoryPage inventoryPage = loginPage.clickLoginButton();
+        InventoryItemPage inventoryItemPage = inventoryPage.clickProduct1();
+        inventoryItemPage.clickAddToCart();
+        inventoryItemPage.clickRemoveFromCart();
+        inventoryItemPage.clickBackButton();
+        assertTrue(inventoryPage.isInventoryTitleDisplayed());
+
+        inventoryItemPage = inventoryPage.clickProduct2();
+        inventoryItemPage.clickAddToCart();
+        inventoryItemPage.clickRemoveFromCart();
+        inventoryItemPage.clickBackButton();
+        assertTrue(inventoryPage.isInventoryTitleDisplayed());
+    }
 }
