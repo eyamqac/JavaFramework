@@ -21,6 +21,13 @@ public class AppTest {
 
     @BeforeEach
     public void setup() {
+        /*
+         * Note that Selenium uses implicit waits by default after every action/command in Selenium
+         * Given that Selenium cannot find the element, it will wait the entire duration trying
+         * to locate the element which may substantially increase the time of the test
+         */
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); //Adjust implicit wait timeout
+
         EdgeOptions options = new EdgeOptions();
         options.addExtensions(new File("./bin/1.49.2_0.crx"));
         driver = new EdgeDriver(options);

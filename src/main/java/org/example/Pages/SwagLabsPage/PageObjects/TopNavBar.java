@@ -45,6 +45,11 @@ public class TopNavBar extends AbstractPage {
 
     //TODO: Make click methods navigate to the appropriate pages
     public InventoryPage clickSideMenuAllItems() {
+        /*
+         * Note that this is an explicit wait that will tell Selenium to wait on this
+         * particular instance until a certain condition is met. Does not have to
+         * wait for the full time duration.
+         * */
         wait.until(ExpectedConditions.visibilityOf(allItems));
         this.allItems.click();
         return new InventoryPage(driver);
