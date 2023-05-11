@@ -1,4 +1,4 @@
-package org.example.Pages.Practice.PageObjects;
+package org.example.Pages.GooglePractice.PageObjects;
 
 import org.example.Pages.AbstractPage;
 import org.openqa.selenium.WebDriver;

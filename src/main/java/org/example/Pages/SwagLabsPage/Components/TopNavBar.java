@@ -1,6 +1,10 @@
-package org.example.Pages.SwagLabsPage.PageObjects;
+package org.example.Pages.SwagLabsPage.Components;
 
 import org.example.Pages.AbstractPage;
+import org.example.Pages.SwagLabsPage.PageObjects.AboutPage;
+import org.example.Pages.SwagLabsPage.PageObjects.InventoryPage;
+import org.example.Pages.SwagLabsPage.PageObjects.LoginPage;
+import org.example.Pages.SwagLabsPage.PageObjects.YourCartPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

@@ -1,3 +1,6 @@
 org\example\AppTest.class
+org\example\SwagLabs\SwagLabs.class
+org\example\GooglePractice\GoogleAppTest.class
+org\example\AutomationExercise\AutomationExerciseTest.class
 org\example\GoogleHomePage.class
 org\example\TestLoginPage.class

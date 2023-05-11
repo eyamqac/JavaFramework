@@ -1,8 +1,9 @@
 package org.example;
 
 import org.example.Pages.AutomationExercisePractice.PageObjects.*;
-import org.example.Pages.Practice.PageObjects.GoogleHomePage;
-import org.example.Pages.Practice.PageObjects.GoogleResultPage;
+import org.example.Pages.GooglePractice.PageObjects.GoogleHomePage;
+import org.example.Pages.GooglePractice.PageObjects.GoogleResultPage;
+import org.example.Pages.Herokuapp.TestLoginPage;
 import org.example.Pages.SwagLabsPage.PageObjects.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
