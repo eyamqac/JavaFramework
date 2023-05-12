@@ -12,6 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
@@ -69,12 +70,14 @@ public class DataTableTest {
     @Test
     public void Test_1() {//Evaluate equality between tables
         driver.get("https://the-internet.herokuapp.com/tables");
-        Table table1 = new Table(driver, "table1");
-        Table table2 = new Table(driver, "table2");
+        Table t1 = new Table(driver, "table1");
+        Table t2 = new Table(driver, "table2");
 
-        assertTrue(table1.headerOrderSame(table2.getHeaders()));
-        assertTrue(table1.tableRowExists(table2.getAllRows()));
-        assertTrue(table1.equals(table2));
+        TableRow tr1 = new TableRow("smith","john", "jsmith@gmail.com", "$30.00",  "http://www.js.com", "edit delete");
+        TableRow tr2 = new TableRow("smith","john", "jsmith@gmail.com", "$30.00",  "http://www.js.com", "edit delete");
+
+        assertEquals(tr1, tr2);
+        assertTrue(t1.tableRowExists(t2.getAllRows()));
 
     }
 }

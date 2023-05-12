@@ -17,6 +17,15 @@ public class TableRow {
     private String website;
     private String action;
 
+    public TableRow(String lastName, String firstName, String email, String amountDue, String website, String action) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.email = email;
+        this.amountDue = amountDue;
+        this.website = website;
+        this.action = action;
+    }
+
     public TableRow(WebElement tableRow) {
         List<WebElement> data = tableRow.findElements(By.xpath("." + COLUMN));
 

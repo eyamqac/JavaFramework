@@ -90,28 +90,4 @@ public class Table extends AbstractPage implements GenericTable {
         }
         return allRowsExist;
     }
-
-    public boolean headerOrderSame(List<String> t2Header) {
-        List<String> t1Header = getHeaders();
-
-        boolean isSame = true;
-        for (int i = 0; i < t1Header.size(); i++) {
-            isSame = isSame && (t1Header.get(i).equals(t2Header.get(i)));
-        }
-        return isSame;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        } else if (obj == null || this.getClass() != obj.getClass()) {
-            return false;
-        } else {
-            Table other = (Table) obj;
-
-            return this.headerOrderSame(other.getHeaders())
-                    && this.tableRowExists(other.getAllRows());
-        }
-    }
 }
