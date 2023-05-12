@@ -1,10 +1,13 @@
 package org.example.Pages.DataTable;
 
-public abstract class GenericTable {
+import java.util.List;
 
-    public GenericTable () {
+public interface GenericTable {
+    List<String> getHeaders();
 
-    }
+    TableRow getHeadersRow();
 
+    TableRow getRow(int index);
 
+    List<TableRow> getAllRows();
 }
