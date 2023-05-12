@@ -44,7 +44,7 @@ public class LoginPage extends AbstractPage {
     }
 
     public boolean loginErrorDisplayed() {
-        return super.isElementDisplayed(driver, LOGIN_ERROR_MESSAGE);
+        return super.isElementDisplayed(LOGIN_ERROR_MESSAGE);
     }
 
     public InventoryPage clickLoginButton() {

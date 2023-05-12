@@ -20,7 +20,7 @@ public abstract class AbstractPage {
         PageFactory.initElements(driver, this);
     }
 
-    public boolean isElementDisplayed(WebDriver driver, String xPath) {
+    public boolean isElementDisplayed(String xPath) {
         return driver.findElements(By.xpath(xPath)).size() > 0;
     }
 

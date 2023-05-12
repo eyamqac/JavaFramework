@@ -2,12 +2,14 @@ package org.example.Pages.DataTable;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
+//TODO: Abstract TableRow class
 public class TableRow {
     //xPaths
-    private String COLUMN = "//child::td";
+    private String COLUMN = "child::td";
 
     //Attributes
     private String lastName;
@@ -27,7 +29,7 @@ public class TableRow {
     }
 
     public TableRow(WebElement tableRow) {
-        List<WebElement> data = tableRow.findElements(By.xpath("." + COLUMN));
+        List<WebElement> data = tableRow.findElements(By.xpath(COLUMN));
 
         this.lastName = data.get(0).getText();
         this.firstName = data.get(1).getText();

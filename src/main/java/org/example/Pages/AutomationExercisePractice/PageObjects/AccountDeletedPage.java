@@ -27,7 +27,7 @@ public class AccountDeletedPage extends AbstractPage {
     }
 
     public boolean isAccountDeletedMessageDisplayed() {
-        return super.isElementDisplayed(driver, ACCOUNT_DELETED_MESSAGE);
+        return super.isElementDisplayed(ACCOUNT_DELETED_MESSAGE);
     }
 
     public AutomationExerciseHomePage clickContinueButton() {

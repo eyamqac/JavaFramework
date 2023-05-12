@@ -27,7 +27,7 @@ public class YourCartPage extends TopNavBar {
     }
 
     public boolean isShoppingCartTitleDisplayed() {
-        return super.isElementDisplayed(driver, TITLE);
+        return super.isElementDisplayed(TITLE);
     }
 
     public InventoryPage clickContinueShoppingButton() {

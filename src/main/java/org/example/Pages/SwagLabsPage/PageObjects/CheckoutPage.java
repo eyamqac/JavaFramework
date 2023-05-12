@@ -57,7 +57,7 @@ public class CheckoutPage extends TopNavBar {
     }
 
     public boolean isCheckoutTitleDisplayed() {
-        return super.isElementDisplayed(driver, TITLE);
+        return super.isElementDisplayed(TITLE);
     }
 
     public YourCartPage clickCancelButton() {

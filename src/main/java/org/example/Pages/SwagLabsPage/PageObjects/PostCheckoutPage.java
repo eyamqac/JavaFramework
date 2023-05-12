@@ -26,7 +26,7 @@ public class PostCheckoutPage extends TopNavBar {
     }
 
     public boolean isSuccessMessageDisplayed() {
-        return super.isElementDisplayed(driver, SUCCESS_MESSAGE);
+        return super.isElementDisplayed(SUCCESS_MESSAGE);
     }
 
     public InventoryPage clickBackHomeButton() {

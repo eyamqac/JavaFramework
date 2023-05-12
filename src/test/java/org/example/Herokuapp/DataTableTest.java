@@ -73,11 +73,21 @@ public class DataTableTest {
         Table t1 = new Table(driver, "table1");
         Table t2 = new Table(driver, "table2");
 
-        TableRow tr1 = new TableRow("smith","john", "jsmith@gmail.com", "$30.00",  "http://www.js.com", "edit delete");
-        TableRow tr2 = new TableRow("smith","john", "jsmith@gmail.com", "$30.00",  "http://www.js.com", "edit delete");
+        TableRow tr1 = new TableRow("smith", "john", "jsmith@gmail.com", "$30.00", "http://www.js.com", "edit delete");
+        TableRow tr2 = new TableRow("smith", "john", "jsmith@gmail.com", "$30.00", "http://www.js.com", "edit delete");
+
+        List<String> temp = t1.getHeaders();
+        List<TableRow> temp2 = t1.getAllRows();
+        TableRow temp3 = t1.getHeadersRow();
 
         assertEquals(tr1, tr2);
         assertTrue(t1.tableRowExists(t2.getAllRows()));
+    }
 
+    @Test
+    public void Test_2() {
+        driver.get("https://the-internet.herokuapp.com/tables");
+
+        Table t1 = new Table(driver, "table1");
     }
 }

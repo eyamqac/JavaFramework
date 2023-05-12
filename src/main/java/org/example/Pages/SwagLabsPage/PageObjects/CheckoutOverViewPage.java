@@ -28,7 +28,7 @@ public class CheckoutOverViewPage extends TopNavBar {
     }
 
     public boolean isCheckoutOverViewTitleDisplayed() {
-        return super.isElementDisplayed(driver, TITLE);
+        return super.isElementDisplayed(TITLE);
     }
 
     public InventoryPage clickCancelButton() {

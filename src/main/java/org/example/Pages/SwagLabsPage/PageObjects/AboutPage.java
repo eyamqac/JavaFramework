@@ -19,6 +19,6 @@ public class AboutPage extends AbstractPage {
     }
 
     public boolean isAboutTitleDisplayed() {
-        return super.isElementDisplayed(driver, TITLE);
+        return super.isElementDisplayed(TITLE);
     }
 }

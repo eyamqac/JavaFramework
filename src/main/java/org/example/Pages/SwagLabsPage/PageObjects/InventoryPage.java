@@ -48,7 +48,7 @@ public class InventoryPage extends TopNavBar {
     }
 
     public boolean isInventoryTitleDisplayed() {
-        return super.isElementDisplayed(driver, TITLE);
+        return super.isElementDisplayed(TITLE);
     }
 
     public void selectFilter(int index) {

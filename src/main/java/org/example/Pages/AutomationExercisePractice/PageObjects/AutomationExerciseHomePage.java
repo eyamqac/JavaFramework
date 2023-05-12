@@ -65,6 +65,6 @@ public class AutomationExerciseHomePage extends AbstractPage {
     }
 
     public boolean LoggedInAsDisplayed() {
-        return super.isElementDisplayed(driver, LOGGED_IN_AS);
+        return super.isElementDisplayed(LOGGED_IN_AS);
     }
 }

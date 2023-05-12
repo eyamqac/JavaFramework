@@ -41,6 +41,6 @@ public class OrderPlacedPage extends AbstractPage {
     }
 
     public boolean orderPlacedMessageDisplayed() {
-        return super.isElementDisplayed(driver, ORDER_PLACED_MSG);
+        return super.isElementDisplayed(ORDER_PLACED_MSG);
     }
 }

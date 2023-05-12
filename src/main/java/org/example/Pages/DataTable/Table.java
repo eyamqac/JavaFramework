@@ -1,6 +1,6 @@
 package org.example.Pages.DataTable;
 
-import org.example.Pages.AbstractPage;
+import org.example.AbstractComponent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,12 +8,10 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Table extends AbstractPage implements GenericTable {
+public class Table extends AbstractComponent implements GenericTable {
     //xPaths
-    private final String HEADER_ROW = "//child::thead//child::tr";
-    private final String HEADERS_COLUMNS = "//descendant::th";
-    private final String ALL_ROWS = "//child::tbody//child::tr";
-    private final String ALL_COLUMNS = "//child::tbody//child::td";
+    private final String header_column = "descendant::th";
+    private final String all_rows = "child::tbody//child::tr";
 
     //Attributes
     private String tableId;
@@ -36,14 +34,19 @@ public class Table extends AbstractPage implements GenericTable {
          *
          * WebDriver.findElement() will use the driver (i.e the entire page) to search for your
          * given selector.
+         *
+         * Note that when using WebElement.findElement(), since we can search for an element within
+         * the context of another WebElement, the xPath provided to WebElement.findElement() may omit
+         * the double slashes (//) because it is implicitly implied. Thus, we are able to search for
+         * the child/descendant..etc elements relative to the current node
          * */
         return driver.findElement(By.xpath(this.tablePath));
     }
 
     //Accessor Methods
     @Override
-    public List<String> getHeaders() {
-        List<WebElement> headers = getTable().findElements(By.xpath("." + HEADERS_COLUMNS));
+    public List<String> getHeaders() { //Gets header columns
+        List<WebElement> headers = getTable().findElements(By.xpath(header_column));
         List<String> headersString = new ArrayList<>();
 
         for (WebElement element : headers) {
@@ -53,9 +56,14 @@ public class Table extends AbstractPage implements GenericTable {
     }
 
     @Override
-    public TableRow getHeadersRow() {
-        WebElement header = getTable().findElement(By.xpath("." + HEADER_ROW));
-        return new TableRow(header);
+    public TableRow getHeadersRow() { //Gets header row
+        List<String> headerColumns = getHeaders();
+        return new TableRow(headerColumns.get(0),
+                headerColumns.get(1),
+                headerColumns.get(2),
+                headerColumns.get(3),
+                headerColumns.get(4),
+                headerColumns.get(5));
     }
 
     @Override
@@ -66,7 +74,7 @@ public class Table extends AbstractPage implements GenericTable {
 
     @Override
     public List<TableRow> getAllRows() {
-        List<WebElement> allRows = getTable().findElements(By.xpath("." + ALL_ROWS));
+        List<WebElement> allRows = getTable().findElements(By.xpath(all_rows));
         List<TableRow> resultList = new ArrayList<>();
 
         for (WebElement element : allRows) {
