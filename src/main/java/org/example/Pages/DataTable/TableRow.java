@@ -2,11 +2,13 @@ package org.example.Pages.DataTable;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-//TODO: Abstract TableRow class
+/**
+ * Note that Table row classes will be uniquely defined for their corresponding tables. Currently, there are
+ * no methods to abstract
+ */
 public class TableRow {
     //xPaths
     private String COLUMN = "child::td";

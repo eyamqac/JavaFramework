@@ -1,0 +1,30 @@
+02:17:52.617 [main] INFO  org.example.SwagLabs.SwagLabsTest - Enter Login Information...
+02:17:52.899 [main] INFO  org.example.SwagLabs.SwagLabsTest - Click Login Button...
+02:17:53.103 [AsyncHttpClient-1-4] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+02:19:29.943 [main] INFO  org.example.SwagLabs.SwagLabsTest - Entered Login Information
+02:19:30.139 [main] INFO  org.example.SwagLabs.SwagLabsTest - Clicked Login Button
+02:19:30.329 [main] INFO  org.example.SwagLabs.SwagLabsTest - Clicked Product 1
+02:19:30.474 [main] INFO  org.example.SwagLabs.SwagLabsTest - Added Product 1 To Cart
+02:19:30.618 [main] INFO  org.example.SwagLabs.SwagLabsTest - Clicked Shopping Cart Button
+02:19:30.760 [main] INFO  org.example.SwagLabs.SwagLabsTest - Clicked Checkout Button
+02:19:31.267 [main] INFO  org.example.SwagLabs.SwagLabsTest - Filled Out Personal Information
+02:19:31.425 [main] INFO  org.example.SwagLabs.SwagLabsTest - Clicked Continue Button
+02:19:31.576 [main] INFO  org.example.SwagLabs.SwagLabsTest - Clicked Finish Button
+02:19:31.721 [main] INFO  org.example.SwagLabs.SwagLabsTest - Clicked Back Home Button
+02:19:31.855 [main] INFO  org.example.SwagLabs.SwagLabsTest - Opened SideBar
+02:19:32.020 [main] INFO  org.example.SwagLabs.SwagLabsTest - Clicked Logout
