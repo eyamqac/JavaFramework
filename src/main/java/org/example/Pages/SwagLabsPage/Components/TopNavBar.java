@@ -45,6 +45,7 @@ public class TopNavBar extends AbstractPage {
 
     public void openSideBar() {
         this.sideMenu.click();
+        super.setLogMessage("Open Side Action Bar");
     }
 
     //TODO: Make click methods navigate to the appropriate pages
@@ -62,12 +63,14 @@ public class TopNavBar extends AbstractPage {
     public AboutPage clickSideMenuAbout() {
         wait.until(ExpectedConditions.visibilityOf(about));
         this.about.click();
+        super.setLogMessage("Clicked About Page");
         return new AboutPage(driver);
     }
 
     public LoginPage clickSideMenuLogout() {
         wait.until(ExpectedConditions.visibilityOf(logout)); //wait needed as automation runs too fast to find element
         this.logout.click();
+        super.setLogMessage("Click Logout");
         return new LoginPage(driver);
     }
 
@@ -76,6 +79,7 @@ public class TopNavBar extends AbstractPage {
 
     public YourCartPage clickShoppingCartButton() {
         this.shoppingCartButton.click();
+        super.setLogMessage("Clicked Shopping Cart Button");
         return new YourCartPage(driver);
     }
 }

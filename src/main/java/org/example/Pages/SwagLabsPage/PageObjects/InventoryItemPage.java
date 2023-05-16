@@ -28,6 +28,7 @@ public class InventoryItemPage extends TopNavBar {
 
     public void clickAddToCart() {
         this.addToCartButton.click();
+        super.setLogMessage("Clicked Add Item To Cart");
     }
 
     public void clickRemoveFromCart() {

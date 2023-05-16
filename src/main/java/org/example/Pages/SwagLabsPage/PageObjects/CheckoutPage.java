@@ -42,6 +42,7 @@ public class CheckoutPage extends TopNavBar {
         this.enterFirstName(firstName);
         this.enterLastName(lastName);
         this.enterZipCode(zipCode);
+        super.setLogMessage("Enter Personal Checkout Information");
     }
 
     public void enterFirstName(String text) {
@@ -67,6 +68,7 @@ public class CheckoutPage extends TopNavBar {
 
     public CheckoutOverViewPage clickContinueButton() {
         this.continueButton.click();
+        super.setLogMessage("Click Continue");
         return new CheckoutOverViewPage(driver);
     }
 }

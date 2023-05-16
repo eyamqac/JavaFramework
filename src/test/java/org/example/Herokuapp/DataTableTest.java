@@ -73,6 +73,7 @@ public class DataTableTest {
         Table t1 = new Table(driver, "table1");
         Table t2 = new Table(driver, "table2");
 
+        //These rows are content equal
         TableRow tr1 = new TableRow("smith", "john", "jsmith@gmail.com", "$30.00", "http://www.js.com", "edit delete");
         TableRow tr2 = new TableRow("smith", "john", "jsmith@gmail.com", "$30.00", "http://www.js.com", "edit delete");
 
@@ -82,12 +83,5 @@ public class DataTableTest {
 
         assertEquals(tr1, tr2);
         assertTrue(t1.tableRowExists(t2.getAllRows()));
-    }
-
-    @Test
-    public void Test_2() {
-        driver.get("https://the-internet.herokuapp.com/tables");
-
-        Table t1 = new Table(driver, "table1");
     }
 }

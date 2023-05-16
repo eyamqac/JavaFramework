@@ -33,6 +33,7 @@ public class LoginPage extends AbstractPage {
     public void fill(String username, String password) {
         this.enterUserName(username);
         this.enterPassword(password);
+        super.setLogMessage("Enter Login Information");
     }
 
     public void enterUserName(String text) {
@@ -49,6 +50,7 @@ public class LoginPage extends AbstractPage {
 
     public InventoryPage clickLoginButton() {
         this.loginButton.click();
+        super.setLogMessage("Clicked Login Button");
         return new InventoryPage(driver);
     }
 }

@@ -37,6 +37,7 @@ public class YourCartPage extends TopNavBar {
 
     public CheckoutPage clickCheckoutButton() {
         this.checkoutButton.click();
+        super.setLogMessage("Clicked Checkout Button");
         return new CheckoutPage(driver);
     }
 }

@@ -30,10 +30,10 @@ public class SwagLabsTest {
         driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill("standard_user", "secret_sauce");
-        log.info("Enter Login Information...");
+//        log.info("Enter Login Information...");
 
         InventoryPage inventoryPage = loginPage.clickLoginButton();
-        log.info("Click Login Button...");
+//        log.info("Click Login Button...");
 
         assertTrue(!loginPage.loginErrorDisplayed());
     }
@@ -53,45 +53,45 @@ public class SwagLabsTest {
         driver.get("https://www.saucedemo.com");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill("standard_user", "secret_sauce");
-        log.info("Entered Login Information");
+//        log.info("Entered Login Information");
 
         InventoryPage inventoryPage = loginPage.clickLoginButton();
-        log.info("Clicked Login Button");
+//        log.info("Clicked Login Button");
         assertTrue(inventoryPage.isInventoryTitleDisplayed());
 
         InventoryItemPage inventoryItemPage = inventoryPage.clickProduct1();
-        log.info("Clicked Product 1");
+//        log.info("Clicked Product 1");
         assertTrue(inventoryItemPage.getAddButton().isDisplayed());
         inventoryItemPage.clickAddToCart();
-        log.info("Added Product 1 To Cart");
+//        log.info("Added Product 1 To Cart");
         assertTrue(inventoryItemPage.getRemoveButton().isDisplayed());
 
         YourCartPage yourCartPage = inventoryItemPage.clickShoppingCartButton();
-        log.info("Clicked Shopping Cart Button");
+//        log.info("Clicked Shopping Cart Button");
         assertTrue(yourCartPage.isShoppingCartTitleDisplayed());
 
         CheckoutPage checkoutPage = yourCartPage.clickCheckoutButton();
-        log.info("Clicked Checkout Button");
+//        log.info("Clicked Checkout Button");
         assertTrue(checkoutPage.isCheckoutTitleDisplayed());
         checkoutPage.fill("temp", "generic", "12345");
-        log.info("Filled Out Personal Information");
+//        log.info("Filled Out Personal Information");
 
         CheckoutOverViewPage overViewPage = checkoutPage.clickContinueButton();
-        log.info("Clicked Continue Button");
+//        log.info("Clicked Continue Button");
         assertTrue(overViewPage.isCheckoutOverViewTitleDisplayed());
 
         PostCheckoutPage postCheckoutPage = overViewPage.clickFinishButton();
-        log.info("Clicked Finish Button");
+//        log.info("Clicked Finish Button");
         assertTrue(postCheckoutPage.isSuccessMessageDisplayed());
 
         inventoryPage = postCheckoutPage.clickBackHomeButton();
-        log.info("Clicked Back Home Button");
+//        log.info("Clicked Back Home Button");
         assertTrue(inventoryPage.isInventoryTitleDisplayed());
 
         inventoryPage.openSideBar();
-        log.info("Opened SideBar");
+//        log.info("Opened SideBar");
         loginPage = inventoryPage.clickSideMenuLogout();
-        log.info("Clicked Logout");
+//        log.info("Clicked Logout");
     }
 
     @Test
@@ -135,5 +135,4 @@ public class SwagLabsTest {
         inventoryItemPage.clickBackButton();
         assertTrue(inventoryPage.isInventoryTitleDisplayed());
     }
-
 }

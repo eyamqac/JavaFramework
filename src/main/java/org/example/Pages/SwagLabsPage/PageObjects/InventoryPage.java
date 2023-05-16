@@ -54,10 +54,12 @@ public class InventoryPage extends TopNavBar {
     public void selectFilter(int index) {
         Select select = new Select(filter);
         select.selectByIndex(index);
+        super.setLogMessage("Selected Filter");
     }
 
     public InventoryItemPage clickProduct1() {
         this.product1.click();
+        super.setLogMessage("Clicked Product 1");
         return new InventoryItemPage(driver);
     }
 

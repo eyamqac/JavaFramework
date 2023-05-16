@@ -38,6 +38,7 @@ public class CheckoutOverViewPage extends TopNavBar {
 
     public PostCheckoutPage clickFinishButton() {
         this.finishButton.click();
+        super.setLogMessage("Click Finish Button");
         return new PostCheckoutPage(driver);
     }
 }
