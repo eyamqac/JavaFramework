@@ -63,6 +63,7 @@ public class CheckoutPage extends TopNavBar {
 
     public YourCartPage clickCancelButton() {
         this.cancelButton.click();
+        super.setLogMessage("Click Cancel");
         return new YourCartPage(driver);
     }
 

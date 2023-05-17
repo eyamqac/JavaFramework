@@ -7,10 +7,20 @@
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="${LOG_PATTERN}"/>
         </Console>
-        <File name="MyFile" fileName="logs/app.log">
-            <PatternLayout pattern="${LOG_PATTERN}">
+        <!--        <File name="MyFile" fileName="logs/pp.log">-->
+        <!--            <PatternLayout>-->
+        <!--                <Pattern>${LOG_PATTERN}</Pattern>-->
+        <!--            </PatternLayout>-->
+        <!--        </File>-->
+
+        <RollingFile name="MyFile" filePattern="logs/app-%d{HH-mm-ss-SSS}.log">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
             </PatternLayout>
-        </File>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+            </Policies>
+        </RollingFile>
     </Appenders>
     <Loggers>
         <Root level="info">

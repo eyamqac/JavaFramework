@@ -33,13 +33,17 @@ public class InventoryItemPage extends TopNavBar {
 
     public void clickRemoveFromCart() {
         this.removeButton.click();
+        super.setLogMessage("Click Remove Item From Cart");
     }
 
     public InventoryPage clickBackButton() {
         this.backButton.click();
+        super.setLogMessage("Click Back Button");
         return new InventoryPage(driver);
     }
 
+    //Methods to be deleted, Previously used to check we arrived on page
+    //Use isElementDisplayed() instead
     public WebElement getAddButton() {
         return addToCartButton;
     }

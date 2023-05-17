@@ -33,6 +33,7 @@ public class CheckoutOverViewPage extends TopNavBar {
 
     public InventoryPage clickCancelButton() {
         this.cancelButton.click();
+        super.setLogMessage("Click Cancel Button");
         return new InventoryPage(driver);
     }
 

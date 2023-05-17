@@ -65,6 +65,7 @@ public class InventoryPage extends TopNavBar {
 
     public InventoryItemPage clickProduct2() {
         this.product2.click();
+        super.setLogMessage("Clicked Product 2");
         return new InventoryItemPage(driver);
     }
 
