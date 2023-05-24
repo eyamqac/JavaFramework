@@ -1,0 +1,49 @@
+09:15:16.860 [AsyncHttpClient-1-4] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+09:17:24.298 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:17:24.580 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:17:50.138 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:17:50.272 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:18:01.848 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:18:02.017 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:18:02.160 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked Product 1
+09:18:02.263 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Clicked Add Item To Cart
+09:18:02.363 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Clicked Shopping Cart Button
+09:18:02.464 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.YourCartPage - Clicked Checkout Button
+09:18:02.793 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutPage - Enter Personal Checkout Information
+09:18:02.883 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutPage - Click Continue
+09:18:02.973 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutOverViewPage - Click Finish Button
+09:18:03.065 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.PostCheckoutPage - Click Go Back Home Button
+09:18:03.143 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Open Side Action Bar
+09:18:03.820 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click Logout
+09:18:14.871 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:18:15.120 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:18:15.378 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Selected Filter
+09:18:29.778 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:18:29.944 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:18:30.050 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Open Side Action Bar
+09:18:41.019 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked About Page
+09:18:54.060 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:18:54.245 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:18:54.377 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked Product 1
+09:18:54.457 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Clicked Add Item To Cart
+09:18:54.524 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Remove Item From Cart
+09:18:54.617 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Back Button
+09:18:54.717 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked Product 2
+09:18:54.775 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Clicked Add Item To Cart
+09:18:54.833 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Remove Item From Cart
+09:18:54.911 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Back Button

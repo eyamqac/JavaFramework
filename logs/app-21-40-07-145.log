@@ -1,0 +1,3 @@
+21:40:07.141 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+21:40:07.329 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+21:40:21.022 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked Product 1

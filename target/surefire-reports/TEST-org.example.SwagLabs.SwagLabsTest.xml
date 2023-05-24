@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.AutomationExercise.AutomationExerciseTest" time="84.875" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.SwagLabs.SwagLabsTest" time="66.777" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -57,54 +57,114 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="Test_1" classname="org.example.AutomationExercise.AutomationExerciseTest" time="20.391">
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 18451
+  <testcase name="Test_1" classname="org.example.SwagLabs.SwagLabsTest" time="10.114">
+    <system-out><![CDATA[09:27:46.736 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:27:47.015 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 17697
 To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
 
 Only local connections are allowed.
 Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
 
 Microsoft Edge WebDriver was started successfully.
-[1684848300.111][WARNING]: Public key in crx header is different from key in manifest
-key from header:   MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9NabEmSVHDAPyAicIyfbqkAaAA0eyPVvYaAQWEMhfMtwcHJDDH/oQMB/l6dY3Ey+S2OvJU/KX/0c1oUjGu73S0woJMs1nuIc7t5ZYhYlmVF2A1NYadv5NneHHiqsJpiAYJ2pJrLKkOzVGGoLJheTNfIQOOhN+TQESEOgz8/pe34O4V4NtfYBSsYW8MGJqy/dBOE2OYs//92zKMwWZHyfHLiuzGUzZwQ0PLJnUrdv1X/zhQNmIhbs6vmRVBe0xvBDbfipMoN1iBzKIMOXJtZycF8sUqyHMNuzdBuKffyI735pw+MTg74QLnaVyZoqMZLRSjHdqz73Z9yhSLTzihMJJQIDAQAB
-key from manifest: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtej8nZ6GDzzNjLD1WCjkbCf15gZlrgzMn9To0ef+6Tiyk6uDSePSaaiMG+8rNgTCQM1ES6Hy8XzTJf8o19ldg1GXHE4MAdjjzDNv3ya05Vj71r/dzI9OyL45DnshMYdW7lyzHp7nt1L5uWtmZs4MiOO43RrWzrGuvhhUdQm9rz4nOgu9q7FWqZP6kUYL42TJgQ6Sc0Qu25TshDdJME3uK5z/kV3BNlmQFDhuAXQZKP/KCV2ogG7R/VcHj1a2ETjRFMQxtQUaWtCmpDYw7URD4CuRNy9LBTylNASfFCHLAEc9MWqFD1Alj63o+WsqBP/h81Vs7nH6PnXQg9+fOCpMyQIDAQAB
-generated extension id from header key:   pmbpejfiehgdfknfkpdphoaohammickm
-generated extension id from manifest key: odfafepnkmbhccpbejgmiehpchacaeak
-May 23, 2023 9:25:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 23, 2023 9:27:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="Test_2" classname="org.example.AutomationExercise.AutomationExerciseTest" time="32.313">
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 8047
+  <testcase name="Test_2" classname="org.example.SwagLabs.SwagLabsTest" time="9.401">
+    <system-out><![CDATA[09:27:56.335 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:27:56.437 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 35801
 To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
 
 Only local connections are allowed.
 Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
 
 Microsoft Edge WebDriver was started successfully.
-[1684848321.119][WARNING]: Public key in crx header is different from key in manifest
-key from header:   MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9NabEmSVHDAPyAicIyfbqkAaAA0eyPVvYaAQWEMhfMtwcHJDDH/oQMB/l6dY3Ey+S2OvJU/KX/0c1oUjGu73S0woJMs1nuIc7t5ZYhYlmVF2A1NYadv5NneHHiqsJpiAYJ2pJrLKkOzVGGoLJheTNfIQOOhN+TQESEOgz8/pe34O4V4NtfYBSsYW8MGJqy/dBOE2OYs//92zKMwWZHyfHLiuzGUzZwQ0PLJnUrdv1X/zhQNmIhbs6vmRVBe0xvBDbfipMoN1iBzKIMOXJtZycF8sUqyHMNuzdBuKffyI735pw+MTg74QLnaVyZoqMZLRSjHdqz73Z9yhSLTzihMJJQIDAQAB
-key from manifest: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtej8nZ6GDzzNjLD1WCjkbCf15gZlrgzMn9To0ef+6Tiyk6uDSePSaaiMG+8rNgTCQM1ES6Hy8XzTJf8o19ldg1GXHE4MAdjjzDNv3ya05Vj71r/dzI9OyL45DnshMYdW7lyzHp7nt1L5uWtmZs4MiOO43RrWzrGuvhhUdQm9rz4nOgu9q7FWqZP6kUYL42TJgQ6Sc0Qu25TshDdJME3uK5z/kV3BNlmQFDhuAXQZKP/KCV2ogG7R/VcHj1a2ETjRFMQxtQUaWtCmpDYw7URD4CuRNy9LBTylNASfFCHLAEc9MWqFD1Alj63o+WsqBP/h81Vs7nH6PnXQg9+fOCpMyQIDAQAB
-generated extension id from header key:   pmbpejfiehgdfknfkpdphoaohammickm
-generated extension id from manifest key: odfafepnkmbhccpbejgmiehpchacaeak
-May 23, 2023 9:25:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 23, 2023 9:27:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 111
 ]]></system-err>
   </testcase>
-  <testcase name="Test_3" classname="org.example.AutomationExercise.AutomationExerciseTest" time="32.168">
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 33322
+  <testcase name="Test_3" classname="org.example.SwagLabs.SwagLabsTest" time="11.395">
+    <system-out><![CDATA[09:28:05.933 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:28:06.174 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:28:06.324 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked Product 1
+09:28:06.433 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Clicked Add Item To Cart
+09:28:06.550 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Clicked Shopping Cart Button
+09:28:06.634 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.YourCartPage - Clicked Checkout Button
+09:28:06.924 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutPage - Enter Personal Checkout Information
+09:28:07.007 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutPage - Click Continue
+09:28:07.100 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutOverViewPage - Click Finish Button
+09:28:07.192 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.PostCheckoutPage - Click Go Back Home Button
+09:28:07.262 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Open Side Action Bar
+09:28:07.924 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click Logout
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 2500
 To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
 
 Only local connections are allowed.
 Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
 
 Microsoft Edge WebDriver was started successfully.
-[1684848354.268][WARNING]: Public key in crx header is different from key in manifest
-key from header:   MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9NabEmSVHDAPyAicIyfbqkAaAA0eyPVvYaAQWEMhfMtwcHJDDH/oQMB/l6dY3Ey+S2OvJU/KX/0c1oUjGu73S0woJMs1nuIc7t5ZYhYlmVF2A1NYadv5NneHHiqsJpiAYJ2pJrLKkOzVGGoLJheTNfIQOOhN+TQESEOgz8/pe34O4V4NtfYBSsYW8MGJqy/dBOE2OYs//92zKMwWZHyfHLiuzGUzZwQ0PLJnUrdv1X/zhQNmIhbs6vmRVBe0xvBDbfipMoN1iBzKIMOXJtZycF8sUqyHMNuzdBuKffyI735pw+MTg74QLnaVyZoqMZLRSjHdqz73Z9yhSLTzihMJJQIDAQAB
-key from manifest: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtej8nZ6GDzzNjLD1WCjkbCf15gZlrgzMn9To0ef+6Tiyk6uDSePSaaiMG+8rNgTCQM1ES6Hy8XzTJf8o19ldg1GXHE4MAdjjzDNv3ya05Vj71r/dzI9OyL45DnshMYdW7lyzHp7nt1L5uWtmZs4MiOO43RrWzrGuvhhUdQm9rz4nOgu9q7FWqZP6kUYL42TJgQ6Sc0Qu25TshDdJME3uK5z/kV3BNlmQFDhuAXQZKP/KCV2ogG7R/VcHj1a2ETjRFMQxtQUaWtCmpDYw7URD4CuRNy9LBTylNASfFCHLAEc9MWqFD1Alj63o+WsqBP/h81Vs7nH6PnXQg9+fOCpMyQIDAQAB
-generated extension id from header key:   pmbpejfiehgdfknfkpdphoaohammickm
-generated extension id from manifest key: odfafepnkmbhccpbejgmiehpchacaeak
-May 23, 2023 9:25:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 23, 2023 9:28:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="Test_4" classname="org.example.SwagLabs.SwagLabsTest" time="10.101">
+    <system-out><![CDATA[09:28:17.655 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:28:17.814 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:28:18.037 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Selected Filter
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 46241
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+May 23, 2023 9:28:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="Test_5" classname="org.example.SwagLabs.SwagLabsTest" time="15.364">
+    <system-out><![CDATA[09:28:27.503 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:28:27.704 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:28:27.802 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Open Side Action Bar
+09:28:32.608 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked About Page
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 43554
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+May 23, 2023 9:28:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 111
+]]></system-err>
+  </testcase>
+  <testcase name="Test_6" classname="org.example.SwagLabs.SwagLabsTest" time="10.398">
+    <system-out><![CDATA[09:28:42.896 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:28:43.129 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Clicked Login Button
+09:28:43.236 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked Product 1
+09:28:43.310 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Clicked Add Item To Cart
+09:28:43.371 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Remove Item From Cart
+09:28:43.447 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Back Button
+09:28:43.522 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Clicked Product 2
+09:28:43.571 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Clicked Add Item To Cart
+09:28:43.624 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Remove Item From Cart
+09:28:43.688 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Back Button
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 113.0.1774.50 (8c198093cedae51263c20d5d679dc091c24bbf87) on port 15144
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+May 23, 2023 9:28:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 111
 ]]></system-err>
   </testcase>

@@ -62,8 +62,8 @@ public class TopNavBar extends AbstractPage {
 
     public AboutPage clickSideMenuAbout() {
         wait.until(ExpectedConditions.visibilityOf(about));
+        super.setLogMessage("Click About Page");
         this.about.click();
-        super.setLogMessage("Clicked About Page");
         return new AboutPage(driver);
     }
 
@@ -78,8 +78,8 @@ public class TopNavBar extends AbstractPage {
     }
 
     public YourCartPage clickShoppingCartButton() {
+        super.setLogMessage("Click Shopping Cart Button");
         this.shoppingCartButton.click();
-        super.setLogMessage("Clicked Shopping Cart Button");
         return new YourCartPage(driver);
     }
 }

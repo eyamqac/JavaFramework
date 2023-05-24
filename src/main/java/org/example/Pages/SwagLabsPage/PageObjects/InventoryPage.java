@@ -58,14 +58,14 @@ public class InventoryPage extends TopNavBar {
     }
 
     public InventoryItemPage clickProduct1() {
+        super.setLogMessage("Click Product 1");
         this.product1.click();
-        super.setLogMessage("Clicked Product 1");
         return new InventoryItemPage(driver);
     }
 
     public InventoryItemPage clickProduct2() {
+        super.setLogMessage("Click Product 2");
         this.product2.click();
-        super.setLogMessage("Clicked Product 2");
         return new InventoryItemPage(driver);
     }
 

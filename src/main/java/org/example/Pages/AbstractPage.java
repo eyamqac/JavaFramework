@@ -28,6 +28,10 @@ public abstract class AbstractPage {
         return driver.findElements(By.xpath(xPath)).size() > 0;
     }
 
+    public boolean isElementDisplayed(By b) {
+        return driver.findElements(b).size() > 0;
+    }
+
     public boolean isElementDisplayed(WebElement element) {
         try {
             return element.isDisplayed();

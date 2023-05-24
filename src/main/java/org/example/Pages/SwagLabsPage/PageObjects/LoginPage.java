@@ -1,6 +1,7 @@
 package org.example.Pages.SwagLabsPage.PageObjects;
 
 import org.example.Pages.AbstractPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,26 +32,29 @@ public class LoginPage extends AbstractPage {
     }
 
     public void fill(String username, String password) {
+        super.setLogMessage("Enter Login Information");
         this.enterUserName(username);
         this.enterPassword(password);
-        super.setLogMessage("Enter Login Information");
     }
 
     public void enterUserName(String text) {
+        super.setLogMessage("Enter Username");
         this.username.sendKeys(text);
     }
 
     public void enterPassword(String text) {
+        super.setLogMessage("Enter Password");
         this.password.sendKeys(text);
     }
 
     public boolean loginErrorDisplayed() {
-        return super.isElementDisplayed(LOGIN_ERROR_MESSAGE);
+//        return super.isElementDisplayed(LOGIN_ERROR_MESSAGE);
+        return super.isElementDisplayed(By.xpath(LOGIN_ERROR_MESSAGE));
     }
 
     public InventoryPage clickLoginButton() {
+        super.setLogMessage("Click Login Button");
         this.loginButton.click();
-        super.setLogMessage("Clicked Login Button");
         return new InventoryPage(driver);
     }
 }
