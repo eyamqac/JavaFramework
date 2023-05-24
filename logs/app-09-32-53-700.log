@@ -1,0 +1,16 @@
+09:32:53.690 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:32:53.707 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+09:32:53.983 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+09:32:54.190 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+09:33:09.259 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:33:09.259 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+09:33:09.496 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+09:33:09.718 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+09:33:21.870 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:33:21.871 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+09:33:22.108 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+09:33:22.305 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+09:33:33.580 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+09:33:33.581 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+09:33:33.851 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+09:33:34.350 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button

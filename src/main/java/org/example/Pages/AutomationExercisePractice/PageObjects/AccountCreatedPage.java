@@ -1,6 +1,7 @@
 package org.example.Pages.AutomationExercisePractice.PageObjects;
 
 import org.example.Pages.AbstractPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +28,7 @@ public class AccountCreatedPage extends AbstractPage {
     }
 
     public boolean isSuccessMessageDisplayed() {
-        return super.isElementDisplayed(SUCCESS_MESSAGE);
+        return super.isElementDisplayed(By.xpath(SUCCESS_MESSAGE));
     }
 
     public AutomationExerciseHomePage clickContinueButton() {

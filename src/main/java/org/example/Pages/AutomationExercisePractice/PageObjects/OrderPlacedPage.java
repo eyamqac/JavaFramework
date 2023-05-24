@@ -1,6 +1,7 @@
 package org.example.Pages.AutomationExercisePractice.PageObjects;
 
 import org.example.Pages.AbstractPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,6 +42,6 @@ public class OrderPlacedPage extends AbstractPage {
     }
 
     public boolean orderPlacedMessageDisplayed() {
-        return super.isElementDisplayed(ORDER_PLACED_MSG);
+        return super.isElementDisplayed(By.xpath(ORDER_PLACED_MSG));
     }
 }

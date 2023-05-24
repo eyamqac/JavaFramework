@@ -1,6 +1,7 @@
 package org.example.Pages.AutomationExercisePractice.PageObjects;
 
 import org.example.Pages.AbstractPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -65,6 +66,6 @@ public class AutomationExerciseHomePage extends AbstractPage {
     }
 
     public boolean LoggedInAsDisplayed() {
-        return super.isElementDisplayed(LOGGED_IN_AS);
+        return super.isElementDisplayed(By.xpath(LOGGED_IN_AS));
     }
 }

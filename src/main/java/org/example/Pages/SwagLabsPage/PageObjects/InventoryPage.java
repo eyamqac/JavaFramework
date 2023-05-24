@@ -1,6 +1,7 @@
 package org.example.Pages.SwagLabsPage.PageObjects;
 
 import org.example.Pages.SwagLabsPage.Components.TopNavBar;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -48,7 +49,7 @@ public class InventoryPage extends TopNavBar {
     }
 
     public boolean isInventoryTitleDisplayed() {
-        return super.isElementDisplayed(TITLE);
+        return super.isElementDisplayed(By.xpath(TITLE));
     }
 
     public void selectFilter(int index) {

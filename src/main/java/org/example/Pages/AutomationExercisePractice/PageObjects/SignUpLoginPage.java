@@ -1,6 +1,7 @@
 package org.example.Pages.AutomationExercisePractice.PageObjects;
 
 import org.example.Pages.AbstractPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -64,11 +65,11 @@ public class SignUpLoginPage extends AbstractPage {
     }
 
     public boolean loginErrorMessageDisplayed() {
-        return super.isElementDisplayed(LOGIN_ERROR_MESSAGE);
+        return super.isElementDisplayed(By.xpath(LOGIN_ERROR_MESSAGE));
     }
 
     public boolean signUpErrorMessageDisplayed() {
-        return super.isElementDisplayed(SIGNUP_ERROR_MESSAGE);
+        return super.isElementDisplayed(By.xpath(SIGNUP_ERROR_MESSAGE));
     }
 
     //This method is supposed to redirect back to home page only

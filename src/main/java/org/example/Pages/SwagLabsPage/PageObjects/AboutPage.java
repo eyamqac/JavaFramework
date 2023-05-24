@@ -1,6 +1,7 @@
 package org.example.Pages.SwagLabsPage.PageObjects;
 
 import org.example.Pages.AbstractPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,6 +20,6 @@ public class AboutPage extends AbstractPage {
     }
 
     public boolean isAboutTitleDisplayed() {
-        return super.isElementDisplayed(TITLE);
+        return super.isElementDisplayed(By.xpath(TITLE));
     }
 }

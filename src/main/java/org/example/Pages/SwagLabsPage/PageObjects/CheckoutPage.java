@@ -1,6 +1,7 @@
 package org.example.Pages.SwagLabsPage.PageObjects;
 
 import org.example.Pages.SwagLabsPage.Components.TopNavBar;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -58,7 +59,7 @@ public class CheckoutPage extends TopNavBar {
     }
 
     public boolean isCheckoutTitleDisplayed() {
-        return super.isElementDisplayed(TITLE);
+        return super.isElementDisplayed(By.xpath(TITLE));
     }
 
     public YourCartPage clickCancelButton() {

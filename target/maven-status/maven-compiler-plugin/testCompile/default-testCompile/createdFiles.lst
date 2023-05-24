@@ -2,6 +2,7 @@ org\example\Herokuapp\DataTableTest.class
 org\example\AutomationExercise\AutomationExerciseTest.class
 org\example\AppTest.class
 org\example\SwagLabs\SwagLabsTest.class
+org\example\cucumber\CucumberTestSuite.class
 org\example\GooglePractice\GoogleAppTest.class
 org\example\Herokuapp\HerokuappTest.class
 org\example\GoogleHomePage.class

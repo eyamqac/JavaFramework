@@ -2,14 +2,15 @@ org\example\Pages\DataTable\TableRow.class
 org\example\Pages\DataTable\Table.class
 org\example\Pages\GooglePractice\PageObjects\GoogleResultPage.class
 org\example\Pages\SwagLabsPage\PageObjects\PostCheckoutPage.class
+org\example\stepdefinitions\CucumberSteps.class
 org\example\Pages\AutomationExercisePractice\PageObjects\PaymentPage.class
 org\example\Pages\AutomationExercisePractice\PageObjects\ShoppingCartPage.class
 org\example\Pages\SwagLabsPage\Components\TopNavBar.class
 org\example\Pages\AutomationExercisePractice\PageObjects\ProductItemPage.class
 org\example\Pages\Herokuapp\TestLoginPage.class
 org\example\Pages\AutomationExercisePractice\PageObjects\ProductsPage.class
+org\example\Pages\AbstractComponent.class
 org\example\Pages\SwagLabsPage\PageObjects\YourCartPage.class
-org\example\AbstractComponent.class
 org\example\App.class
 org\example\Pages\DataTable\GenericTable.class
 org\example\Pages\SwagLabsPage\PageObjects\CheckoutOverViewPage.class

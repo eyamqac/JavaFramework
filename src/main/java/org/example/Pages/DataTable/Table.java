@@ -1,6 +1,6 @@
 package org.example.Pages.DataTable;
 
-import org.example.AbstractComponent;
+import org.example.Pages.AbstractComponent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

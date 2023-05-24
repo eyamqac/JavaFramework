@@ -1,6 +1,7 @@
 package org.example.Pages.SwagLabsPage.PageObjects;
 
 import org.example.Pages.SwagLabsPage.Components.TopNavBar;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +28,7 @@ public class PostCheckoutPage extends TopNavBar {
     }
 
     public boolean isSuccessMessageDisplayed() {
-        return super.isElementDisplayed(SUCCESS_MESSAGE);
+        return super.isElementDisplayed(By.xpath(SUCCESS_MESSAGE));
     }
 
     public InventoryPage clickBackHomeButton() {
