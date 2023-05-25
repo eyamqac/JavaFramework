@@ -19,17 +19,12 @@ public class CucumberSteps {
     }
 
     @Given("the website {string} is open")
-    public void theUserNavigatesTo(String string) {
-        driver.get(string);
-    }
-
-    @Given("the website <website> is open")
     public void theUserNavigatesToWebsite(String website) {
-        theUserNavigatesTo(website);
+        driver.get(website);
     }
 
     @When("the user logs in with {string} {string}")
-    public void theUserLogsInWith(String username, String password) {
+    public void theUserLogsInWithUsernamePassword(String username, String password) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.fill(username, password);
         loginPage.clickLoginButton();
@@ -47,9 +42,25 @@ public class CucumberSteps {
         overViewPage.clickFinishButton();
     }
 
-    @When("the user logs in with <username> <password>")
-    public void theUserLogsInWithUsernamePassword(String username, String password) {
-        theUserLogsInWith(username, password);
+    @And("the user navigates to the about page")
+    public void theUserNavigatesToTheAboutPage() {
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        inventoryPage.openSideBar();
+        AboutPage aboutPage = inventoryPage.clickSideMenuAbout();
+    }
+
+    @And("the user adds and removes product from shopping cart")
+    public void theUserAddsAnItemAndRemovesItFromShoppingCart() { //this step definition will only add and remove product 1 to cart
+        InventoryPage inventoryPage = new InventoryPage(driver);
+        InventoryItemPage inventoryItemPage = inventoryPage.clickProduct1();
+        inventoryItemPage.clickAddToCart();
+        inventoryItemPage.clickRemoveFromCart();
+    }
+
+    @Then("the item is removed from shopping cart")
+    public void theItemIsRemovedFromShoppingCart() {
+        InventoryItemPage inventoryItemPage = new InventoryItemPage(driver);
+        assertTrue(inventoryItemPage.isAddButtonDisplayed());
     }
 
     @Then("the user should successfully log in")
@@ -73,12 +84,5 @@ public class CucumberSteps {
     public void theUserSPurchaseWasSuccessful() {
         PostCheckoutPage postCheckoutPage = new PostCheckoutPage(driver);
         assertTrue(postCheckoutPage.isSuccessMessageDisplayed());
-    }
-
-    @And("the user navigates to the about page")
-    public void theUserNavigatesToTheAboutPage() {
-        InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.openSideBar();
-        AboutPage aboutPage = inventoryPage.clickSideMenuAbout();
     }
 }

@@ -1,0 +1,7 @@
+12:46:54.059 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+12:46:54.076 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+12:46:54.305 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+12:46:54.488 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+12:46:54.720 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click Product 1
+12:46:54.892 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Add Item To Cart
+12:46:55.111 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Remove Item From Cart

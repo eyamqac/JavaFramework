@@ -1,0 +1,22 @@
+13:37:35.490 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+13:37:35.506 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+13:37:35.732 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+13:37:35.873 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+13:37:47.200 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+13:37:47.201 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+13:37:47.481 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+13:37:47.682 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+13:37:58.615 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+13:37:58.615 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+13:37:58.893 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+13:37:59.222 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+13:38:10.917 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+13:38:10.917 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+13:38:11.219 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+13:38:11.438 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+13:38:23.696 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+13:38:23.699 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+13:38:24.033 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+13:38:24.236 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+13:38:24.636 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Open Side Action Bar
+13:38:24.715 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click About Page

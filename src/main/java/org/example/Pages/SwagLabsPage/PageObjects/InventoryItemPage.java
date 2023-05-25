@@ -1,6 +1,7 @@
 package org.example.Pages.SwagLabsPage.PageObjects;
 
 import org.example.Pages.SwagLabsPage.Components.TopNavBar;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -50,5 +51,13 @@ public class InventoryItemPage extends TopNavBar {
 
     public WebElement getRemoveButton() {
         return removeButton;
+    }
+
+    public boolean isAddButtonDisplayed() {
+        return super.isElementDisplayed(By.xpath(ADD_TO_CART_BUTTON));
+    }
+
+    public boolean isRemoveButtonDisplayed() {
+        return super.isElementDisplayed(By.xpath(REMOVE_BUTTON));
     }
 }
