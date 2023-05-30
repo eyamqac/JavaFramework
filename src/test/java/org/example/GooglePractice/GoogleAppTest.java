@@ -2,6 +2,7 @@ package org.example.GooglePractice;
 
 import org.example.Pages.GooglePractice.PageObjects.GoogleHomePage;
 import org.example.Pages.GooglePractice.PageObjects.GoogleResultPage;
+import org.example.WebDriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,7 +23,8 @@ public class GoogleAppTest {
          * to locate the element which may substantially increase the time of the test
          */
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); //Adjust implicit wait timeout
-        driver = new EdgeDriver();
+//        driver = new EdgeDriver();
+        driver = new WebDriverFactory().createBrowserDriver();
     }
 
     @AfterEach

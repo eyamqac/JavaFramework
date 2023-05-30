@@ -3,6 +3,7 @@ package org.example.SwagLabs;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.Pages.SwagLabsPage.PageObjects.*;
+import org.example.WebDriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +18,8 @@ public class SwagLabsTest {
 
     @BeforeEach
     public void setup() {
-        driver = new EdgeDriver();
+        //driver = new EdgeDriver();
+        driver = new WebDriverFactory().createBrowserDriver();
     }
 
     @AfterEach

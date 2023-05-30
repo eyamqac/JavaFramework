@@ -11,7 +11,6 @@ org\example\Pages\Herokuapp\TestLoginPage.class
 org\example\Pages\AutomationExercisePractice\PageObjects\ProductsPage.class
 org\example\Pages\AbstractComponent.class
 org\example\Pages\SwagLabsPage\PageObjects\YourCartPage.class
-org\example\App.class
 org\example\Pages\DataTable\GenericTable.class
 org\example\Pages\SwagLabsPage\PageObjects\CheckoutOverViewPage.class
 org\example\Pages\AutomationExercisePractice\PageObjects\AccountCreatedPage.class
@@ -22,6 +21,7 @@ org\example\Pages\SwagLabsPage\PageObjects\AboutPage.class
 org\example\Pages\AutomationExercisePractice\PageObjects\AutomationExerciseHomePage.class
 org\example\Pages\SwagLabsPage\PageObjects\InventoryItemPage.class
 org\example\Pages\SwagLabsPage\PageObjects\LoginPage.class
+org\example\WebDriverFactory.class
 org\example\Pages\SwagLabsPage\PageObjects\InventoryPage.class
 org\example\Pages\AbstractPage.class
 org\example\Pages\SwagLabsPage\PageObjects\CheckoutPage.class

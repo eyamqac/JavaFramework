@@ -2,6 +2,7 @@ package org.example.Herokuapp;
 
 import org.example.Pages.DataTable.Table;
 import org.example.Pages.DataTable.TableRow;
+import org.example.WebDriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,7 +23,7 @@ public class DataTableTest {
 
     @BeforeEach
     public void setup() {
-        driver = new EdgeDriver();
+        driver = new WebDriverFactory().createBrowserDriver();
     }
 
     @AfterEach

@@ -1,6 +1,7 @@
 package org.example.Herokuapp;
 
 import org.example.Pages.Herokuapp.TestLoginPage;
+import org.example.WebDriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +16,7 @@ public class HerokuappTest {
 
     @BeforeEach
     public void setup() {
-        driver = new EdgeDriver();
+        driver = new WebDriverFactory().createBrowserDriver();
     }
 
     @AfterEach
