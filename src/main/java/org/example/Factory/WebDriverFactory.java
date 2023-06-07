@@ -15,16 +15,19 @@ import java.io.File;
 public class WebDriverFactory {
 
     public EdgeOptions getEdgeOptions() {
+        //Invoke method calls from the Builder class
         return new EdgeOptionsBuilder()
-                .setAdditionalArguments("start-maximized")
+                .setWindowSize("start-maximized")
+                .setExtension(new File("./bin/1.49.2_0.crx"))
                 .build();
     }
 
     public ChromeOptions getChromeOptions() {
         //Invoke method calls from the Builder class
         return new ChromeOptionsBuilder()
-                .setAdditionalArguments("start-maximized")
-                .setAdditionalArguments(new File("./bin/1.49.2_0.crx"))
+                .setWindowSize("start-maximized")
+//                .setIncognito("--incognito")
+                .setExtension(new File("./bin/1.49.2_0.crx"))
                 .build();
     }
 
@@ -35,7 +38,7 @@ public class WebDriverFactory {
             case "firefox":
                 return new FirefoxDriver();
             default:
-                return new EdgeDriver();
+                return new EdgeDriver(getEdgeOptions());
         }
     }
 }

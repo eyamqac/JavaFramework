@@ -11,6 +11,18 @@ public class ChromeOptionsBuilder {
     private final List<String> args = new ArrayList<>();
     private final List<File> files = new ArrayList<>();
 
+    public ChromeOptionsBuilder setIncognito(String s) {
+        return this.setAdditionalArguments(s);
+    }
+
+    public ChromeOptionsBuilder setWindowSize(String s) {
+        return this.setAdditionalArguments(s);
+    }
+
+    public ChromeOptionsBuilder setExtension(File file) {
+        return this.setAdditionalArguments(file);
+    }
+
     //Creates a list of arguments to be appended to the object in the build() method
     public ChromeOptionsBuilder setAdditionalArguments(String args) {
         this.args.add(args);
@@ -21,11 +33,6 @@ public class ChromeOptionsBuilder {
         this.files.add(file);
         return this;
     }
-
-//    public ChromeOptionsBuilder setMaxWindowSize(String s) {
-//        this.isMax = s;
-//        return this;
-//    }
 
     public ChromeOptions build() {
         //Invoke ChromeOptions constructor to build object

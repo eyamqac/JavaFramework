@@ -1,0 +1,4 @@
+11:20:18.838 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:20:18.849 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:20:19.091 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:20:19.297 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button

@@ -1,5 +1,6 @@
 package org.example.AutomationExercise;
 
+import org.example.Factory.WebDriverFactory;
 import org.example.Pages.AutomationExercisePractice.PageObjects.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,9 +18,10 @@ public class AutomationExerciseTest {
 
     @BeforeEach
     public void setup() {
-        EdgeOptions options = new EdgeOptions();
-        options.addExtensions(new File("./bin/1.49.2_0.crx")); //Used to remove popup ads within AutomationExercise page
-        driver = new EdgeDriver(options);
+//        EdgeOptions options = new EdgeOptions();
+//        options.addExtensions(new File("./bin/1.49.2_0.crx")); //Used to remove popup ads within AutomationExercise page
+//        driver = new EdgeDriver(options);
+        driver = new WebDriverFactory().createBrowserDriver();
     }
 
     @AfterEach
