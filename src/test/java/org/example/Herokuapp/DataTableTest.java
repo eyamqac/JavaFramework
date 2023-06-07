@@ -2,14 +2,13 @@ package org.example.Herokuapp;
 
 import org.example.Pages.DataTable.Table;
 import org.example.Pages.DataTable.TableRow;
-import org.example.WebDriverFactory;
+import org.example.Factory.WebDriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.List;
 

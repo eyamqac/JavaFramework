@@ -1,0 +1,44 @@
+11:14:11.728 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:14:11.759 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:14:12.034 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:14:12.205 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+11:14:23.224 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:14:23.228 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:14:23.402 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:14:23.579 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+11:14:33.640 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:14:33.640 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:14:33.834 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:14:33.991 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+11:14:42.946 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:14:42.946 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:14:43.142 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:14:43.286 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+11:14:52.687 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:14:52.687 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:14:52.835 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:14:53.005 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+11:15:02.449 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:15:02.449 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:15:02.631 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:15:02.792 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+11:15:02.973 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click Product 1
+11:15:03.098 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Add Item To Cart
+11:15:03.163 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Shopping Cart Button
+11:15:03.240 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.YourCartPage - Click Checkout Button
+11:15:03.593 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutPage - Enter Personal Checkout Information
+11:15:03.681 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutPage - Click Continue
+11:15:03.753 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutOverViewPage - Click Finish Button
+11:15:12.243 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:15:12.259 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:15:12.455 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:15:12.603 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+11:15:12.947 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Open Side Action Bar
+11:15:13.001 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click About Page
+11:15:26.871 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+11:15:26.872 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+11:15:27.076 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+11:15:27.209 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+11:15:27.349 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click Product 1
+11:15:27.588 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Add Item To Cart
+11:15:27.727 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Remove Item From Cart

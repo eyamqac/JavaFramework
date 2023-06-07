@@ -2,13 +2,12 @@ package org.example.GooglePractice;
 
 import org.example.Pages.GooglePractice.PageObjects.GoogleHomePage;
 import org.example.Pages.GooglePractice.PageObjects.GoogleResultPage;
-import org.example.WebDriverFactory;
+import org.example.Factory.WebDriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

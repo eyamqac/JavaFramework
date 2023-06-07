@@ -1,0 +1,14 @@
+21:04:09.174 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Login Information
+21:04:09.188 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Username
+21:04:09.425 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Enter Password
+21:04:09.555 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.LoginPage - Click Login Button
+21:04:09.902 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click Product 1
+21:04:10.099 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Add Item To Cart
+21:04:10.220 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryItemPage - Click Shopping Cart Button
+21:04:10.379 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.YourCartPage - Click Checkout Button
+21:04:11.004 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutPage - Enter Personal Checkout Information
+21:04:11.110 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutPage - Click Continue
+21:04:11.217 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.CheckoutOverViewPage - Click Finish Button
+21:04:11.363 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.PostCheckoutPage - Click Go Back Home Button
+21:04:11.519 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Open Side Action Bar
+21:04:11.744 [main] INFO  org.example.Pages.SwagLabsPage.PageObjects.InventoryPage - Click Logout
